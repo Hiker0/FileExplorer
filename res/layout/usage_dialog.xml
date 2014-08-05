@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_root"
+    android:layout_width="340dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+            <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/usage"
+                 android:textColor="#ffffffff"
+                 android:textSize="22sp"
+                 android:paddingLeft="20dp"
+                 android:gravity="center_vertical" 
+                 android:background="@drawable/tw_dialog_title_holo_dark"
+                 
+            />
+            <!-- category information -->
+            <LinearLayout android:layout_width="fill_parent"
+                android:orientation="vertical" android:layout_height="wrap_content"
+                android:layout_gravity="bottom" 
+                android:gravity="center_vertical" android:paddingTop="5dip">
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView android:id="@+id/sd_card_capacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="18sp"
+                         />
+                </LinearLayout>
+
+                <net.micode.fileexplorer.CategoryBar
+                    android:id="@+id/category_bar" android:layout_width="fill_parent"
+                    android:layout_height="35px" android:layout_gravity="center"
+                    android:layout_marginBottom="5dip">
+                </net.micode.fileexplorer.CategoryBar>
+
+                <LinearLayout android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginBottom="15dip"
+                        android:layout_marginTop="10dip">
+                        <TextView android:id="@+id/category_legend_music"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/storage_usage_bar_block_music" />
+                        <TextView android:id="@+id/category_legend_video"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/storage_usage_bar_block_videos" />
+                        <TextView android:id="@+id/category_legend_picture"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/storage_usage_bar_block_images" />
+                        <TextView android:id="@+id/category_legend_document"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/storage_usage_bar_block_documents" />
+                        <TextView android:id="@+id/category_legend_other"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/storage_usage_bar_block_others" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginBottom="5dip"
+                        android:visibility="gone">
+                        <TextView android:id="@+id/category_legend_theme"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/legend_theme" />
+
+                        <TextView android:id="@+id/category_legend_zip"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/legend_zip" />
+
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginBottom="5dip"
+                        android:visibility="gone">
+                        <TextView android:id="@+id/category_legend_apk"
+                            style="@style/CategoryLegendStyle"
+                            android:drawableLeft="@drawable/legend_apk" />
+                        <TextView
+                            style="@style/CategoryLegendStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>    
+            <TextView android:id="@+id/button_ok"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="@string/confirm" 
+                 android:textColor="#ffffffff"
+                 android:textSize="22sp"
+                 android:background="@drawable/btn_bottom"
+            />
+</LinearLayout>

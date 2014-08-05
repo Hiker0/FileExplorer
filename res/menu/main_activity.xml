@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_menu_search"
+        android:showAsAction="always" /> -->
+	    <item android:id="@+id/action_usage"
+	        android:icon="@drawable/ic_menu_storage_usage"
+	        android:title="@string/usage"
+	        android:showAsAction="always" />
+	    <item android:id="@+id/action_storage"
+	        android:title="@string/tab_sd"
+	        android:showAsAction="collapseActionView" 
+	        />
+		<item android:id="@+id/action_ftp"
+	        android:title="@string/tab_remote" 
+	        android:showAsAction="collapseActionView"
+	        />	
+		<item android:id="@+id/action_exit"
+	        android:title="@string/menu_exit" 
+	        android:showAsAction="collapseActionView"
+	        />
+
+</menu>
